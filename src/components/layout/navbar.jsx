@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="font-semibold rounded-lg text-2xl ">
           SkillsPath
         </div>
-        <div className="bg-[#00071B] items-center justify-around flex px-5 sm:px-0 w-[60%] sm:w-[40%] rounded-lg">
+        <div className="bg-[#00071B] border-3 border-[#1c253e] items-center justify-around flex px-5 py-2 sm:px-0 w-[60%] sm:w-[40%] rounded-lg">
           <NavLink
             to="/"
             className={({ isActive }) =>

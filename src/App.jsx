@@ -1,28 +1,25 @@
 import { useState } from 'react'
 import {Routes,Route} from 'react-router-dom'
-import Navbar from './components/layout/navbar'
+import Layout from './layout'
 import About from './components/about'
 import Contact from './components/contact'
-import Footer from './components/layout/footer'
+import NotFound from './components/notFound'
 import Home from './components/home'
 
 function App() {
   
   return (
     <>
-    <header>
-      <nav>
-        <Navbar/>
-      </nav>
-    </header>
-    <main className="flex-1">
+
       <Routes>
+        <Route element={<Layout/>} >
         <Route path= '/' element={<Home/>} ></Route>
         <Route path= '/about' element={<About/>} ></Route>
         <Route path= '/contact' element={<Contact/>} ></Route>
+        </Route>
+        <Route path='*' element={<NotFound />} />
       </Routes>
-    </main>
-    <Footer/>
+
 
     </>
   )

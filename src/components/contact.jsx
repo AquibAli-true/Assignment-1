@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <div className='text-[#F8F9FA]  flex flex-col gap-3   sm:w-[50%] w-[75%] relative mt-20 mx-auto '>
       <div className='text-2xl'>Contact Us</div>
-        <form action="" className='flex rounded-xl p-3 bg-zinc-800 flex-col gap-2' onSubmit={handleSubmit(onSubmit)}>
+        <form action="" className='flex rounded-xl p-3 bg-[#111727] border-[#1c253e] border-2 flex-col gap-2' onSubmit={handleSubmit(onSubmit)}>
 
           <div className='flex gap-4'>
             <span>Name:</span>

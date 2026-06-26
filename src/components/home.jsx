@@ -6,9 +6,10 @@ import jsCard from '../assets/img/js-card.png'
 
 const Home = () => {
   return (
+    <>
     <div className='mx-5 flex flex-col md:gap-15 sm:gap-7 gap-5'>
     <section className='sm:flex-row my-5 mx-5 flex flex-col gap-5 sm:justify-between'>
-        <div className=' text-[#F8F9FA] order-2 md:order-1 w-full sm:w-[40%] flex flex-col justify-center gap-3 text-center text-left'>
+        <div className=' text-[#F8F9FA] order-2 md:order-1 w-full sm:w-[40%] flex flex-col justify-center gap-3  text-left'>
           <div className=' text-2xl font-bold sm:text-4xl'>Learn Web Development</div>
           <p className='w-full'>Explore our growing collection of courses on key web design and development subjects. An industry expert has written each course, helped by members of the Chrome team. Follow the modules sequentially, or dip into the topics you most want to learn about. </p>
         </div>
@@ -42,11 +43,15 @@ const Home = () => {
       </div>
     </div>
     </section>
-
-    <section className='w-full h-75'>
+    </div>
+    <section className='w-full mt-5 sm:mt-10 h-50 sm:h-60 items-center justify-center bg-[#111727] flex flex-col gap-5'>
+      <span className='sm:text-4xl text-[#F8F9FA] text-2xl' >Embark on an Adventure!</span>
+      <span className='text-[#94A3B8] px-5 text-left '>Take a thrilling journey through our Courses. Book an adventurous demo and discover endless possibilities of Web Development. </span>
+      <button className='bg-[#F8F9FA] cursor-pointer w-[40%] rounded-4xl text-black'>Claim 20% OFF!</button>
 
     </section>
-    </div>
+    </>
+
 
   )
 }
